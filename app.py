@@ -75,7 +75,7 @@ fig5.update_layout(title_text='Releases over the year', title_x=0.5)
 ################################################################################
 
 app.layout = html.Div(style = {"background-color": "white"},children=[html.Div([
-                                                                    html.H2("Please choose a year you want to have information about",style = {"padding-top": "10px","padding-bottom": "10px","background-color": "#FFF1AF"}),
+                                                                    html.H2("Please choose a year you want to have information about",style = {"padding-top": "10px","padding-bottom": "10px","background-color": "#FFF1AF","text-align":"center"}),
                                                                     dcc.Dropdown(
                                                                                 id="dropdown",
                                                                                 options=sorted([{'label': i, 'value': i} for i in years], key = lambda x: x['label']),
